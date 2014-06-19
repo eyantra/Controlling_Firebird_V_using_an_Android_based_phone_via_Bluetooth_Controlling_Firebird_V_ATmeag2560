@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" android:background="#4e7eb2">
+<TextView  
+   	android:text="@string/hello"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ad2628"/>
+    
+
+<TextView  
+    android:id="@+id/xbox"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#ad4805" android:text="Acceleration in X:  - - - -"/>
+<TextView  
+    android:id="@+id/ybox"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ad4805" android:text="Acceleration in Y:  - - - -"/>
+<TextView  
+    android:id="@+id/zbox"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ad4805" android:text="Acceleration in Z:  - - - -"/>    
+
+<TextView  
+    android:id="@+id/cmdbox"
+    android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#ffb71d4d"/><ImageView android:layout_height="wrap_content" android:id="@+id/ImageView" android:layout_weight="1" android:layout_width="fill_parent" android:layout_gravity="center"></ImageView>  
+<Button android:id="@+id/button_send"
+            android:layout_height="wrap_content" android:textColor="#b71d4d" android:hapticFeedbackEnabled="true" android:text="Test Send" android:layout_width="wrap_content" android:layout_gravity="right"/>           
+
+
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="bottom" android:background="#ad4805"><TextView android:id="@+id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bluetooth Address" android:textColor="#ffffffff" android:gravity="center" android:width="95px" android:layout_gravity="center"></TextView><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_gravity="center_vertical" android:id="@+id/btaddress" android:cursorVisible="false" android:layout_marginTop="3px" android:width="250px" android:text="00:12:6F:03:72:48"></EditText><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connect" android:id="@+id/connect" android:layout_weight="1" android:layout_gravity="center_vertical" android:layout_marginTop="3px"></Button>
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disconnect" android:layout_weight="1" android:layout_gravity="center_vertical" android:layout_marginTop="3px" android:id="@+id/disconnect"></Button>
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

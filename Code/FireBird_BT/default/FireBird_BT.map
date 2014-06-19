@@ -1,0 +1,501 @@
+Archive member included because of file (symbol)
+
+d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_udivmodhi4.o)
+                              LCD.o (__udivmodhi4)
+d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_exit.o)
+                              d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o (exit)
+d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_clear_bss.o)
+                              FireBird_BT.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+decode              0x1               FireBird_BT.o
+ser_trax_buf        0x64              FireBird_BT.o
+res_wait            0x1               FireBird_BT.o
+million             0x2               FireBird_BT.o
+flag                0x1               FireBird_BT.o
+ser_buf             0x64              FireBird_BT.o
+temp                0x2               FireBird_BT.o
+maincnt             0x1               FireBird_BT.o
+trx_count           0x2               FireBird_BT.o
+tens                0x2               FireBird_BT.o
+trx_curr_cnt        0x2               FireBird_BT.o
+count               0x2               FireBird_BT.o
+hundred             0x2               FireBird_BT.o
+main_buf            0x64              FireBird_BT.o
+unit                0x2               FireBird_BT.o
+thousand            0x2               FireBird_BT.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00800200         0x0000fe00         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800200
+LOAD d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+LOAD FireBird_BT.o
+LOAD BlueTooth.o
+LOAD LCD.o
+LOAD MotorControl.o
+LOAD d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a
+LOAD d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6\libc.a
+LOAD d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x7c2
+ *(.vectors)
+ .vectors       0x00000000       0xe4 d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x000000e4                . = ALIGN (0x2)
+                0x000000e4                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000e4        0x0 linker stubs
+ *(.trampolines*)
+                0x000000e4                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000e4                __ctors_start = .
+ *(.ctors)
+                0x000000e4                __ctors_end = .
+                0x000000e4                __dtors_start = .
+ *(.dtors)
+                0x000000e4                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000e4        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+                0x000000e4                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000e4       0x10 d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000f4       0x1a d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+                0x000000f4                __do_copy_data
+ .init4         0x0000010e       0x10 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_clear_bss.o)
+                0x0000010e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000011e        0x8 d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+ *(.init9)
+ *(.text)
+ .text          0x00000126        0x4 d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+                0x00000126                __vector_38
+                0x00000126                __vector_22
+                0x00000126                __vector_28
+                0x00000126                __vector_1
+                0x00000126                __vector_32
+                0x00000126                __vector_34
+                0x00000126                __vector_24
+                0x00000126                __vector_12
+                0x00000126                __vector_55
+                0x00000126                __vector_46
+                0x00000126                __bad_interrupt
+                0x00000126                __vector_6
+                0x00000126                __vector_31
+                0x00000126                __vector_35
+                0x00000126                __vector_39
+                0x00000126                __vector_3
+                0x00000126                __vector_23
+                0x00000126                __vector_30
+                0x00000126                __vector_45
+                0x00000126                __vector_25
+                0x00000126                __vector_11
+                0x00000126                __vector_54
+                0x00000126                __vector_13
+                0x00000126                __vector_17
+                0x00000126                __vector_19
+                0x00000126                __vector_56
+                0x00000126                __vector_7
+                0x00000126                __vector_49
+                0x00000126                __vector_41
+                0x00000126                __vector_43
+                0x00000126                __vector_27
+                0x00000126                __vector_5
+                0x00000126                __vector_33
+                0x00000126                __vector_47
+                0x00000126                __vector_52
+                0x00000126                __vector_37
+                0x00000126                __vector_4
+                0x00000126                __vector_44
+                0x00000126                __vector_9
+                0x00000126                __vector_2
+                0x00000126                __vector_21
+                0x00000126                __vector_15
+                0x00000126                __vector_36
+                0x00000126                __vector_29
+                0x00000126                __vector_40
+                0x00000126                __vector_8
+                0x00000126                __vector_26
+                0x00000126                __vector_48
+                0x00000126                __vector_14
+                0x00000126                __vector_10
+                0x00000126                __vector_50
+                0x00000126                __vector_16
+                0x00000126                __vector_18
+                0x00000126                __vector_20
+                0x00000126                __vector_42
+ .text          0x0000012a      0x19c FireBird_BT.o
+                0x0000012a                Init_Devices
+                0x00000138                main
+ .text          0x000002c6      0x176 BlueTooth.o
+                0x000003fa                BlueTooth_Add
+                0x000002c6                Init_USART2
+                0x000002e6                __vector_51
+                0x00000398                __vector_53
+ .text          0x0000043c      0x2cc LCD.o
+                0x0000058c                LCD_Cursor
+                0x000005c4                LCD_Print
+                0x000004a0                LCD_Init_Ports
+                0x00000572                LCD_String
+                0x000004ae                LCD_WR_Command
+                0x000004f0                LCD_Init
+                0x0000056a                LCD_Home
+                0x0000043c                LCD_Reset_4bit
+                0x00000528                LCD_WR_Char
+ .text          0x00000708       0x8e MotorControl.o
+                0x0000073e                Init_Motor_Timer
+                0x00000708                Init_Motor_Peri
+                0x00000750                Set_Velocity
+                0x00000784                Right_Turn
+                0x0000072a                Init_PWM_Ports
+                0x0000075a                Forward
+                0x00000736                Init_Motor_Port
+                0x00000768                Reverse
+                0x00000776                Left_Turn
+                0x00000792                Stop
+ .text          0x00000796        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_udivmodhi4.o)
+ .text          0x00000796        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_exit.o)
+ .text          0x00000796        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_clear_bss.o)
+                0x00000796                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000796       0x28 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_udivmodhi4.o)
+                0x00000796                __udivmodhi4
+ .text.libgcc   0x000007be        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_exit.o)
+ .text.libgcc   0x000007be        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_clear_bss.o)
+                0x000007be                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000007be        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_exit.o)
+                0x000007be                exit
+                0x000007be                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000007be        0x4 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000007c2                _etext = .
+
+.data           0x00800200       0x3a load address 0x000007c2
+                0x00800200                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800200        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+ .data          0x00800200       0x3a FireBird_BT.o
+ .data          0x0080023a        0x0 BlueTooth.o
+ .data          0x0080023a        0x0 LCD.o
+ .data          0x0080023a        0x0 MotorControl.o
+ .data          0x0080023a        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_udivmodhi4.o)
+ .data          0x0080023a        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_exit.o)
+ .data          0x0080023a        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080023a                . = ALIGN (0x2)
+                0x0080023a                _edata = .
+                0x0080023a                PROVIDE (__data_end, .)
+
+.bss            0x0080023a      0x142
+                0x0080023a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080023a        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr6/crtm2560.o
+ .bss           0x0080023a        0x0 FireBird_BT.o
+ .bss           0x0080023a        0x0 BlueTooth.o
+ .bss           0x0080023a        0x0 LCD.o
+ .bss           0x0080023a        0x0 MotorControl.o
+ .bss           0x0080023a        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_udivmodhi4.o)
+ .bss           0x0080023a        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_exit.o)
+ .bss           0x0080023a        0x0 d:/winavr/bin/../lib/gcc/avr/4.3.3/avr6\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0080023a      0x142 FireBird_BT.o
+                0x0080023a                decode
+                0x0080023b                ser_trax_buf
+                0x0080029f                res_wait
+                0x008002a0                million
+                0x008002a2                flag
+                0x008002a3                ser_buf
+                0x00800307                temp
+                0x00800309                maincnt
+                0x0080030a                trx_count
+                0x0080030c                tens
+                0x0080030e                trx_curr_cnt
+                0x00800310                count
+                0x00800312                hundred
+                0x00800314                main_buf
+                0x00800378                unit
+                0x0080037a                thousand
+                0x0080037c                PROVIDE (__bss_end, .)
+                0x000007c2                __data_load_start = LOADADDR (.data)
+                0x000007fc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080037c        0x0
+                0x0080037c                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080037c                PROVIDE (__noinit_end, .)
+                0x0080037c                _end = .
+                0x0080037c                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x80
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 FireBird_BT.o
+ .debug_aranges
+                0x00000020       0x20 BlueTooth.o
+ .debug_aranges
+                0x00000040       0x20 LCD.o
+ .debug_aranges
+                0x00000060       0x20 MotorControl.o
+
+.debug_pubnames
+                0x00000000      0x412
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xec FireBird_BT.o
+ .debug_pubnames
+                0x000000ec      0x114 BlueTooth.o
+ .debug_pubnames
+                0x00000200      0x161 LCD.o
+ .debug_pubnames
+                0x00000361       0xb1 MotorControl.o
+
+.debug_info     0x00000000      0xd1f
+ *(.debug_info)
+ .debug_info    0x00000000      0x27d FireBird_BT.o
+ .debug_info    0x0000027d      0x20a BlueTooth.o
+ .debug_info    0x00000487      0x64d LCD.o
+ .debug_info    0x00000ad4      0x24b MotorControl.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x425
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x117 FireBird_BT.o
+ .debug_abbrev  0x00000117       0xbc BlueTooth.o
+ .debug_abbrev  0x000001d3      0x161 LCD.o
+ .debug_abbrev  0x00000334       0xf1 MotorControl.o
+
+.debug_line     0x00000000      0xada
+ *(.debug_line)
+ .debug_line    0x00000000      0x288 FireBird_BT.o
+ .debug_line    0x00000288      0x187 BlueTooth.o
+ .debug_line    0x0000040f      0x4e8 LCD.o
+ .debug_line    0x000008f7      0x1e3 MotorControl.o
+
+.debug_frame    0x00000000      0x1d0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 FireBird_BT.o
+ .debug_frame   0x00000030       0x50 BlueTooth.o
+ .debug_frame   0x00000080       0xa0 LCD.o
+ .debug_frame   0x00000120       0xb0 MotorControl.o
+
+.debug_str      0x00000000      0x2ea
+ *(.debug_str)
+ .debug_str     0x00000000      0x184 FireBird_BT.o
+                                0x1be (size before relaxing)
+ .debug_str     0x00000184       0x46 BlueTooth.o
+                                0x198 (size before relaxing)
+ .debug_str     0x000001ca       0x97 LCD.o
+                                0x231 (size before relaxing)
+ .debug_str     0x00000261       0x89 MotorControl.o
+                                0x15b (size before relaxing)
+
+.debug_loc      0x00000000      0x3ae
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x142 FireBird_BT.o
+ .debug_loc     0x00000142       0x36 BlueTooth.o
+ .debug_loc     0x00000178      0x1ea LCD.o
+ .debug_loc     0x00000362       0x4c MotorControl.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(FireBird_BT.elf elf32-avr)
+LOAD linker stubs
